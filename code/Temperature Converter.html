@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Converter</title>
+
+        <style>
+            *{
+                background-color:aqua;
+            }
+            table{
+                border-radius: 6px;
+                padding: 10px 10px;
+                margin-top: 30px;
+            }
+            table th{
+                text-align: center;
+                border-radius: 5px;
+                padding: 20px 60px;  
+            }
+            table td{
+                border-radius: 5px;
+            }
+          
+        </style>
+    </head>
+</html>
+<body>
+    <center><table border="solid ">
+        <tr>
+            <th colspan="2">Temperature Converter</th>
+        </tr>
+        <tr>
+            <th>Degrees<br><input type="number" name="number" id="number"></th>
+            <th>TYPE<br>
+                <select id="typ">
+                <optgroup label="Select one">
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="celsius">celsius</option>
+                </optgroup>
+            </select>
+            </th>
+        </tr>
+        <tr>
+            <td><b>Result</b></td><br>
+            <td>
+                <p id="output"></p>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2"><button type="button" onclick="calculate()">Convert</button></th>
+        </tr>
+    </table>
+</center>
+    <script>
+        function calculate(){
+            let n=parseFloat(document.getElementById("number").value);
+            let typ=document.getElementById("typ").value;
+            let o=0;
+            if (typ=="Fahrenheit"){
+                 o=(n-32)*5/9;
+                 document.getElementById("output").innerText=o+" F";
+            }
+            if (typ=="celsius"){
+                let o=(n*9/5)+32;
+                document.getElementById("output").innerText=o+" C";
+            }
+            
+        }
+       
+    </script>
+</body>
+</html>

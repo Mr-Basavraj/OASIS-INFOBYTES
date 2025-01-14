@@ -1,0 +1,135 @@
+Here’s a structured HTML code for your restaurant landing page, including sections for **Home**, **About Us**, **Specials**, **Gallery**, and **Book a Table**. The code is organized with clear sections and navigation.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSN Kitchen - Restaurant Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .section button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li onclick="scrollToSection('home')">Home</li>
+            <li onclick="scrollToSection('about')">About Us</li>
+            <li onclick="scrollToSection('specials')">Specials</li>
+            <li onclick="scrollToSection('gallery')">Gallery</li>
+            <li onclick="scrollToSection('book-table')">Book a Table</li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="section" style="background-color: #f4f4f4;">
+        <h1>BSN Restaurant</h1>
+        <h3>Foodies love us, serving the world with our burns!</h3>
+        <button onclick="scrollToSection('specials')">EXPLORE FOOD</button>
+        <button onclick="scrollToSection('book-table')">BOOK A TABLE</button>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="section">
+        <h1>About Us</h1>
+        <p>Welcome to BSN Kitchen, where we serve delicious and authentic dishes made with love and passion. Our chefs are dedicated to bringing you the best culinary experience.</p>
+    </div>
+
+    <!-- Specials Section -->
+    <div id="specials" class="section" style="background-color: #f4f4f4;">
+        <h1>Our Specials</h1>
+        <p>Check out our daily specials and seasonal dishes that are crafted to perfection.</p>
+        <button onclick="scrollToSection('book-table')">BOOK A TABLE</button>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="section">
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Food Image 1">
+            <img src="https://via.placeholder.com/300x200" alt="Food Image 2">
+            <img src="https://via.placeholder.com/300x200" alt="Food Image 3">
+            <img src="https://via.placeholder.com/300x200" alt="Food Image 4">
+        </div>
+    </div>
+
+    <!-- Book a Table Section -->
+    <div id="book-table" class="section" style="background-color: #f4f4f4;">
+        <h1>Book a Table</h1>
+        <p>Reserve your table now and enjoy a delightful dining experience at BSN Kitchen.</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required ><br>
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br>
+            <label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" required><br>
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
