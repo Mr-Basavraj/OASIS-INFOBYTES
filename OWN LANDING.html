@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own landing page</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow:scroll;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #Main_head{
+            font-size: 40px;
+            color:blue;
+            background-color:coral;
+            margin-top: 0%;
+        }
+
+        .H_nav{
+            background-color:khaki;
+            padding: 10px;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap:20px;
+        }
+        nav li{
+            display: inline;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+     
+         .H_nav button{
+            background-color: blue;
+            color: white;
+            border:none;
+            margin-left: 100px;
+            margin-top: 4%;
+            padding: 5px 10px;
+            cursor: pointer;
+            
+        }
+        #main_section{
+            background-image: url('D:/VIRTUAL INTERNSHIP/OASIS INFOBYTES/code/Landing Page/gall4.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            background-position: center;
+        }
+
+       .section{
+           height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+       }
+       .section h1,.section h2,.section h3{
+            margin: 10px 0;
+       }
+     
+       .section button{
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+       }
+      
+      .special{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+   
+      }
+      .special img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .special p{
+
+        margin-top: 10px;
+        font-size: 24px;
+        color: black
+      }
+
+      #Menu{
+
+      }
+      .menu_category{
+        margin: 20px 0;
+      }
+      .menu_item{
+        font-size: 18px;
+        margin: 10px 0;
+        padding: 5px;
+        background-color: #f0f0f0;
+        border-radius: 5px;;
+      }
+      .image{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .image img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        flex: 1 1 calc(50% - 10px);
+      }
+      .contact_form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contact_form{
+        margin: 10px 0 5px;
+      }
+      .contact_form input, .contact_form textarea{
+        width:100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+     }
+     .contact_form button{
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        align-self: center;
+     }
+      .footer_content{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #f8f8f8;
+      }
+      .footer_section h3{
+        margin-bottom: 10px;
+      }
+      .copyright{
+        
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+  <div id="main_section">
+    <div class="H_nav">
+        <h1 id="Main_head"> <center>BSN KITCHEN </center></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Specials">Specials</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#contact">Contact </a></li>
+            </ul>
+            <button>BOOK A TABLE</button>
+        </nav> 
+    </div>
+
+    <div id="home" class="section">
+        <h1>BSN Restaurant</h1><br>
+        <h3>Foodies loves us, serving the world with our burns!</h3>
+        <br>
+        <button>EXPLORE FOOD</button>
+        <button>BOOK A TABLE</button>
+    </div>
+
+    <div id="Specials" class="section">
+        <h2>OUR SPECIALIS</h2>
+            <div class="special">
+                <img style=" width:50%"src="D:\VIRTUAL INTERNSHIP\OASIS INFOBYTES\code\Landing Page\birayani.jpg">
+                <p> Birayani </p>
+            </div>
+           
+            <div class="special">
+                 <img  style="width:150%  "src="D:\VIRTUAL INTERNSHIP\OASIS INFOBYTES\code\Landing Page\south.jpg">
+                <P>SOUTH</P>
+            </div>    
+        
+    </div>
+
+    <div id="Menu" class="section">
+        <h2>MENU</h2>
+        <div class="menu_category">
+            <h3>Starters</h3>
+                <div class="menu_item">Paneer Tikka -RS.250</div>
+                <div class="menu_item">Chicken Wings - Rs.250</div>
+                <div class="menu_item">Spring Rolls - Rs 180</div>
+        </div>
+        <div class="menu_category">
+            <h3>Main Course</h3>
+                <div class="menu_item">Hydrabhdhi Biryani - Rs.400</div>
+                <div class="menu_item">Kolhapuri Thali - Rs.500</div>
+                <div class="menu_item">SOUTH DISH - Rs.350</div>
+        </div>
+    </div>
+    
+    <div id="Gallery" class="section">
+        <h2>GALLERY</h2>  
+        <div class="image">
+            <img src="D:\VIRTUAL INTERNSHIP\OASIS INFOBYTES\code\Landing Page\gall.jpg">
+            <img src="D:\VIRTUAL INTERNSHIP\OASIS INFOBYTES\code\Landing Page\gall1.jpg">
+            <img src="D:\VIRTUAL INTERNSHIP\OASIS INFOBYTES\code\Landing Page\gall2.jpg">
+            <img src="D:\VIRTUAL INTERNSHIP\OASIS INFOBYTES\code\Landing Page\gall3.jpg">
+            
+         
+        </div>  
+    </div>
+
+    <div id="book_table" class="section">
+        <h3>BOOK A TABLE</h3>
+        <input type="text" name="name" placeholder="ENTER NAME">
+        <input type="email" name="mail" placeholder="EMAIL">
+        <input type="number" name="number" placeholder="ENTER NUMBER"><br>
+        <input type="date" name="date" placeholder="ENTER DATE">
+        <input type="time" name="time" placeholder="ENTER TIME">
+        <input type="number" name="peoples" placeholder="NO. OF PEOPLES"><br>
+        <textarea rows="4" cols="60">ANY DISCRIPTION</textarea><br>
+        <button>BOOK TABLE</button>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>CONTACT</h2>
+        <form class="contact_form">
+            <lable for="name">NAME</lable>
+            <input type="text" id="name" name="name" >
+            <lable for="email">EMAIL</lable>
+            <input type="email" id="email" name="email">
+            
+            <label for="sunject">Subject</label>
+            <input type="text" id="subject" name="subject" >
+            <br>
+            <textarea rows="4" cols="60" placeholder="Message"></textarea>
+            <button type="button">Sumbit</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer_content">
+        <div class="footer_section">
+            <h3>Contact Information</h3>
+            <p>Email: abc@gmail.com</p>
+            <p>Phone: 1234567890</p>
+            <p>Address: 123, ABC Street, XYZ City</p>
+        </div>
+        <div class="footer_section">
+            <h3>links</h3>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer_section">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+        <div class="copyright">
+           <p> &copy; 2025 Restraunent . All rights reserved.</p>
+        </div> 
+    
+</footer>
+</body>
